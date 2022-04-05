@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Roboto:wght@300&display=swap');
+
+
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+      --clr-moderate-violet: #7541c8;
+      --clr-very-dark-grayish-blue: #48556a;
+      --clr-very-dark-blackish-blue: #19212e;
+      --clr-white: #ffffff;
+      --clr-light-gray: #cfcfcf;
+      --clr-light-grayish-blue: #ecf2f8;
+      --yellow: #e3d810;
+      --magenta: #d9138a;
+      --cyan: #12a4d9;
+      --soft-cyan : #00ffff;
+      --black: #0a0a0a;
+      --lightBlack: #a29a9c;
+      --pear:#accc70;
+      --exLight: #f4f3f3;
+      --transition: all 0.4s ease-in-out;
+      --Heebo: 'Heebo', sans-serif;
+      --Roboto: 'Robot', sans-serif;
+     --poppins: 'Poppins', sans-serif;
+
+}
+
+html {
+  font-size: 50.5%;
+}
+
+main{
+      font-size: 2rem;
+      font-family: var(--poppins);
+}
+
+
+
+.wrapper {
+      
+      max-width: 1400px;
+      padding: 6.5rem;
+      margin-bottom: 1.3rem;
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas: "purple purple grey white-tall" "purple purple grey white-tall" "white grey-long grey-long white-tall";
+      gap: 20px;
+      height: auto;
+      background-color: var(--clr-light-grayish-blue);
+}
+
+@media screen and (max-width: 991px) {
+  .wrapper {
+    grid-template-columns: minmax(400px, 1fr);
+    grid-template-areas: "purple" "grey" "white" "grey-long" "white-tall";
+  }
+  .wrapper .middle {
+    font-size: 1.2rem;
+  }
+}
+
+.purple, .white-small, .white-tall, .grey, .grey-long {
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.purple img, .white-small img, .white-tall img, .grey img, .grey-long img {
+  border-radius: 50%;
+  width: 70%;
+}
+
+.purple {
+  background-color: var(--clr-moderate-violet);
+  color: var(--clr-white);
+  grid-area: purple;
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 122px;
+  background-position-x: 80%;
+}
+
+.purple .bottom {
+  padding-right: 2.5rem;
+}
+
+.white-small, .white-tall {
+  background-color: var(--clr-white);
+  color: var(--clr-very-dark-blackish-blue);
+}
+
+.white-tall {
+  grid-area: white-tall;
+  padding: 1.8rem;
+}
+
+.white-tall .middle {
+  color: var(--clr-very-dark-grayish-blue);
+}
+
+.white-small {
+  grid-area: white;
+  padding: 2.8rem;
+}
+
+.white-small .middle {
+  color: var(--clr-very-dark-grayish-blue);
+}
+
+.grey-long {
+  background-color: var(--clr-very-dark-blackish-blue);
+  color: var(--clr-white);
+  grid-area: grey-long;
+}
+
+.grey-long .bottom {
+  padding-right: 2.5rem;
+}
+
+.grey {
+  background-color: var(--clr-very-dark-grayish-blue);
+  color: var(--clr-white);
+  grid-area: grey;
+}
+
+.grey .bottom {
+  padding-right: 2rem;
+}
+
+.top {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.top h2 {
+  font-size: 12px;
+}
+.top p {
+  color: var(--clr-light-gray);
+  
+}
+
+.middle {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.middle p {
+      font-weight: 900;
+}
+
+.bottom {
+      line-height: 1.5;
+      font-weight: 700;
+
+}
