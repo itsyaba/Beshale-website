@@ -308,7 +308,7 @@ a.active{
       text-align: center;
       background-color: var(--black);
       color: var(--lightBlack);
-
+      padding: 6em 0 0 0;
 }
 
 .footer-item{
@@ -346,11 +346,12 @@ a.active{
       font-size: 0.7rem;
       padding: 0.5em;
       border-radius: 50%;
+      border: 2px solid white;
 }
 
 .social-media:hover{
-      border: 2px solid blueviolet;
-      color: blueviolet;
+      color: var(--cyan);
+      border-color: var(--pear);
 }
 
 .footer-four div{
@@ -367,9 +368,15 @@ a.active{
       margin-right: 1em;
 }
 
+.footer ul li a:hover{
+      color: var(--cyan);
+      text-decoration: underline;
+}
+
 .copyright{
       font-size: 2rem;
       font-weight: 900;
+      padding-top: 4rem;
 }
 
 @media (max-width:660px){
