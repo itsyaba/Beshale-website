@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Roboto:wght@300&display=swap');
+
+:root{
+    --yellow: #e3d810;
+    --magenta: #d9138a;
+    --cyan: #12a4d9;
+    --soft-cyan : #00ffff;
+    --black: #0a0a0a;
+    --lightBlack: #a29a9c;
+    --pear:#accc70;
+    --exLight: #f4f3f3;
+    --transition: all 0.4s ease-in-out;
+    --Heebo: 'Heebo', sans-serif;
+    --Roboto: 'Robot', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+
+}
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: var(--poppins);
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    font-size: 50.5%;;
+    scroll-behavior:smooth;
+
+}
+
+.nav{
+      height: 70vh;
+}
+
+.intro{
+      height: 50vh;
+}
+
+.detail-about{
+      margin-top: 3rem;
+      background-color: white;
+}
+
+.about-flex{
+      align-items: flex-start;
+      margin: 0;
+}
+
+.detail-about img{
+      width: 50vw;
+      margin: 0;
+      border-radius: 5px;
+} 
+
+.mission{
+      background-color: var(--exLight);
+      margin-bottom: 5em;
+
+}
+
+.mission h1{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 4rem;
+}
+
+.mission p{
+      text-align: center;
+      font-size: 1.8rem;
+      width: 70%;
+      margin: 0 auto;
+
+}
+
+.about-detail{
+      align-self: center;
+      margin: 0 2em;
+}
+
+.about-detail h1{
+      font-size: 4rem;
+}
+
+.about-detail p{
+      font-size: 2rem;
+      opacity: 0.7;
+      font-family: sans-serif;
+}
+
+@media (max-width:600px){
+      .nav{
+            height: 50vh;
+      }
+
+      .about-flex{
+            flex-direction: column;
+            margin: 3em;
+      }
+
+      .detail-about img{
+            width: 100vw;
+      }
+}

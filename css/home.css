@@ -404,7 +404,7 @@ html{
     transform: rotate(-90deg);
 }
 
-h2:hover .fa-angle-down , .fa-angle-down.down{
+ .fa-angle-down.down{
     transform: rotate(0);
 }
 
@@ -413,8 +413,9 @@ h2:hover .fa-angle-down , .fa-angle-down.down{
     font-size: 2.4rem;
     font-family: sans-serif;
     padding: 1em;
-    transition: all 0.3 ease-in-out;
+    transition: all 1s ease-in-out;
     display: none;
+
 }
 
 .coll.show{

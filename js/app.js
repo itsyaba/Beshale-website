@@ -31,8 +31,6 @@ window.addEventListener('scroll', function () {
 //   console.log(window.scrollY)
 })
 
-
-
 // 'use strict'
 // var testim = document.getElementById("testim"),
 //     testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),

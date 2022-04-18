@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Roboto:wght@300&display=swap');
+
+:root{
+    --yellow: #e3d810;
+    --magenta: #d9138a;
+    --cyan: #12a4d9;
+    --soft-cyan : #00ffff;
+    --black: #0a0a0a;
+    --lightBlack: #a29a9c;
+    --pear:#accc70;
+    --exLight: #f4f3f3;
+    --transition: all 0.4s ease-in-out;
+    --Heebo: 'Heebo', sans-serif;
+    --Roboto: 'Robot', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+
+}
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: var(--poppins);
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    font-size: 50.5%;;
+    scroll-behavior:smooth;
+
+}
+
+.nav{
+      height: 70vh;
+}
+
+.intro{
+      height: 50vh;
+}
+
+.certificates h2 {
+    text-align: center;
+    border-radius: 10px;
+    /* margin: 0 500px 50px 500px; */
+    margin: 50px 0;
+    font-size: 5rem;
+}
+
+.certficates-img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.certficates-img img {
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    inset: 0;
+    opacity: 0;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.384);
+    color: white;
+    transform: translateY(-10%);
+    overflow: hidden;
+}
+
+.content h3{
+      font-size: 6rem;
+}
+
+.content p{
+      font-size: 2rem;
+      margin: 0 0.5em;
+      text-align: center;
+      font-family: sans-serif;
+}
+
+.img-wrapper>.content {
+    transition: 0.6s ease-in-out;
+}
+
+.img-wrapper:hover>img {
+    filter: blur(5px);
+}
+
+.img-wrapper:hover>.content {
+    transform: translateY(0%);
+    opacity: 1;
+}
