@@ -25,7 +25,6 @@
 html{
     font-family: var(--poppins);
     line-height: 1.5;
-    text-rendering: optimizeLegibility;
     font-size: 50.5%;;
     scroll-behavior:smooth;
 
@@ -58,13 +57,13 @@ html{
 .mission{
       background-color: var(--exLight);
       margin-bottom: 5em;
-
 }
 
 .mission h1{
       text-align: center;
       text-transform: uppercase;
       font-size: 4rem;
+
 }
 
 .mission p{
@@ -72,7 +71,9 @@ html{
       font-size: 1.8rem;
       width: 70%;
       margin: 0 auto;
-
+      font-family: var(--Roboto);
+      margin-top:10px;
+      padding-bottom:40px;
 }
 
 .about-detail{
@@ -80,8 +81,13 @@ html{
       margin: 0 2em;
 }
 
+.about-flex{
+      margin: -10px 0;
+}
+
 .about-detail h1{
       font-size: 4rem;
+      margin-bottom: 40px;
 }
 
 .about-detail p{
@@ -90,17 +96,27 @@ html{
       font-family: sans-serif;
 }
 
+.our-vision{
+      margin-bottom: 20px;
+}
+
 @media (max-width:600px){
       .nav{
             height: 50vh;
       }
 
+      .intro{
+            height: 20vh;
+      }
+
       .about-flex{
             flex-direction: column;
-            margin: 3em;
+            margin: 3em 0;
+
       }
 
       .detail-about img{
             width: 100vw;
+            border-radius: 0px;
       }
 }

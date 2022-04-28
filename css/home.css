@@ -41,6 +41,14 @@ html{
     font-size: 5.5rem;
 }
 
+@media (max-width:500px){
+    .intro-name::before , 
+    .intro-name::after , 
+    .intro-name {
+        font-size: 2rem;
+    }
+}
+
 .intro-name::after{
     content: '--Since 2002--';
 }
@@ -420,4 +428,11 @@ html{
 
 .coll.show{
     display: block;
+}
+
+@media (max-width:500px){
+    .faq-detail div{
+        width: 90%;
+    }
+    
 }
