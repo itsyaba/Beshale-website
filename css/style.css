@@ -43,7 +43,7 @@ body{
 
 .nav{
       background:   linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/header-bg-1.jpg) center/cover no-repeat fixed ;
-      height: 100vh;
+      height: 105vh;
       background-attachment: fixed;
 
 }
@@ -142,18 +142,21 @@ ul li a:hover{
 }
 
 nav button.btn{
-      padding: 1.5em 4em;
+      padding: 1em 3em;
       font-size: 2rem;
       font-weight: 800;
       cursor: pointer;
       border: 2px solid var(--lightBlack);
+      color: var(--exLight);
+
+      background-color: var(--white);
       border-radius: 0.3em;
-      transition: all var(--transition) ease-in-out;
+      transition: var(--transition);
 }
 
 nav button.btn:hover{
-      color: var(--exLight);
-      background-color: transparent;
+      color: var(--black);
+      background-color: white;
 }
 
 @media(max-width:1100px){

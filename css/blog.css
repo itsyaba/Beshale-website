@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Roboto:wght@300&display=swap');
+
+:root {
+      --yellow: #e3d810;
+      --magenta: #d9138a;
+      --cyan: #12a4d9;
+      --soft-cyan: #00ffff;
+      --black: #0a0a0a;
+      --lightBlack: #a29a9c;
+      --pear: #accc70;
+      --exLight: #f4f3f3;
+      --transition: all 0.4s ease-in-out;
+      --Heebo: 'Heebo', sans-serif;
+      --Roboto: 'Robot', sans-serif;
+      --poppins: 'Poppins', sans-serif;
+
+}
+
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+html {
+      font-family: var(--poppins);
+      line-height: 1.5;
+      font-size: 50.5%;
+      ;
+      scroll-behavior: smooth;
+
+}
+
+.nav {
+      height: 70vh;
+}
+
+.intro {
+      height: 50vh;
+}
